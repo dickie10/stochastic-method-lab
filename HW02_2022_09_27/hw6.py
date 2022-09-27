@@ -6,7 +6,7 @@ def fun_pv(irr,n,F):
     ans = F*(1+irr)**(n-15) 
     return ans 
 
-n = np.arange(0,31) 
+n = np.arange(0,16) 
 F = 1
 m = 2  
 c = 0.08
