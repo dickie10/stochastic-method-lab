@@ -13,22 +13,14 @@ def converter(stock,strike_price,opt,position):
     elif opt == 'put' and position == 'short':
         return np.fmin(zero, stock - strike_price) #as min(0,s-x)
     else:
-        pass 
+        pass  
 
 
-
-stock = np.arange(0, 200)
-strike_price = 100
-opt = ['call', 'put'] #array for call or put
-position = ['long', 'short'] #array for position
-i = 0
-for opts in opt:
-    for pos in  position:
-        i += 1
-        plt.subplot(len(opt), len(position), i) #subplot for 4 figures
-        plt.plot(stock, converter(stock, strike_price, opts, pos))
-        plt.title(opts +" and "+ pos)
-        plt.ylabel('Payoff value')
-        plt.xlabel('Prices')
-plt.tight_layout()
+stock = np.arange(30, 110) 
+striker = [50,90,70]
+butterfly = converter(stock,striker[0],'call','long') +converter(stock,striker[1],'call','long') + 2*converter(stock,striker[2],'call','short')
+plt.plot(stock,butterfly)
+plt.xlabel('Stock Price [$]')
+plt.ylabel('Payoff [$]')
+plt.title('Butterfly Spread')
 plt.show()
