@@ -1,0 +1,5 @@
+Binomial model of option pricing is based on binomial theorem, 
+in which there is only two possibility p, and q. If we include 
+three possible prices in the future binomial theorem to calculate 
+probabilty can not be used. And Binomial model of option pricing  
+can not be used.
