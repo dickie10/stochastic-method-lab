@@ -1,8 +1,4 @@
-"""
-Name:Stochastic Method Lab Homework 4 problem 3
-Author:Sandip Kumar Sah
-Email:ssah@jacobs-university.de
-"""
+
 from pylab import *
 from numpy import *
 
