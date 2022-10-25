@@ -1,0 +1,1 @@
+We can conclude that as p is far from 0 or 1 and n has an increasing value the approximation improves.

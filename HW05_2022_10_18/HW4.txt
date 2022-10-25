@@ -1,0 +1,1 @@
+From the Q-Q plot the normal distribution and binomial distribution are similar when n is large as many points fall on the diagnoal
