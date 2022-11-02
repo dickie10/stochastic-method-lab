@@ -1,0 +1,1 @@
+it is seen that Stratonovich integrals is 0.5 times larger than Ito.
