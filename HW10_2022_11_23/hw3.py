@@ -97,7 +97,6 @@ err_vectorized = np.vectorize(err)
 
 if __name__ == '__main__':
     x_max = 8
-    """GTM: have a wider M array for better observation in the plots"""
     M = np.arange(1, 100, 2)
     delta_t = 1 / M
     N = 400
